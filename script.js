@@ -63,4 +63,18 @@ function reverse(arr) {
 }
 
 var result = reverse(["a", "b", "c", "d", "e"]);
+console.log(result);
+
+// 5.Write a function that will return an array of Fibonacci numbers up to a given length n.
+function fibonacciArray(n) {
+    var fibArr = [0, 1];
+    while(fibArr.length < n){
+        var nextFibNum = fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2];
+        fibArr.push(nextFibNum);
+    }
+    return fibArr;
+}
+
+var result = fibonacciArray(10);
 console.log(result); 
+
