@@ -51,3 +51,16 @@ function betterThanAverage(arr) {
 }
 var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
 console.log(result);
+
+// 4.Array Reverse
+// Write a function that will reverse the values an array and return them.
+function reverse(arr) {
+    var reversedArr = [];
+    for(var i = arr.length - 1; i >= 0; i--){
+        reversedArr.push(arr[i]);
+    }
+    return reversedArr;
+}
+
+var result = reverse(["a", "b", "c", "d", "e"]);
+console.log(result); 
